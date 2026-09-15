@@ -9,8 +9,8 @@ import requests
 
 from config import PUZZLES
 
-# puzzles/ sits one level above scraper/
-PROJECT_ROOT = Path(__file__).resolve().parent.parent
+# puzzles/ sits under /var/www/
+PROJECT_ROOT = Path("/var/www")
 
 # regex patterns to pull task data from the puzzle page's JavaScript
 TASK_PATTERN = re.compile(r'var\s+task\s*=\s*["\']([^"\']+)["\']')
